@@ -1,0 +1,232 @@
+@import url("common.css");
+@import url("carrousel.css");
+@import url("footer.css");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+/* HEADER */
+.background {
+  background-image: url("../images/background.jpg");
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  transform: rotate(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header {
+  background-color: black;
+  height: 13vh;
+  min-height: 80px;
+}
+main {
+  justify-content: end;
+  height: 87vh;
+  color: white;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+li a:hover,
+.active,
+i::before {
+  background: linear-gradient(to right, #ff574e, #9932cc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.button {
+  background: linear-gradient(to right, #ff574e, #9932cc);
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+main h1,
+main h2,
+main h3 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: 900;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+#aboutme {
+  background-color: white;
+  justify-content: center;
+}
+
+#skills {
+  padding: 10px 5%;
+  display: flex;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item p {
+  text-align: center;
+}
+
+#projects {
+  padding: 10px 5%;
+
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+}
+#projects img {
+  max-height: 400px !important;
+  height: 400px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.about-text {
+  flex-basis: 500px;
+}
+.about-image {
+  flex-basis: 530px;
+}
+
+/*==============================================
+CONTACT PAGE
+================================================*/
+/* contact form css */
+
+#contact {
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+}
+#contact > form {
+  background: #040209c7;
+  color: #c24d97;
+  box-shadow: 0px 0px 10px #1a0712a8;
+}
+
+#contact i::before {
+  background: #c04e99;
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.contact-form i.fa {
+  font-size: 22px;
+  padding: 3%;
+  background-color: none;
+  border-radius: 80%;
+  margin: 2%;
+  cursor: pointer;
+  border: 2px solid black;
+  color: black;
+}
+
+.contact-form i.fa:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  color: #46acc2;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  background: linear-gradient(45deg, #ae50a6, #605ae2);
+  color: white;
+  color: black;
+  border: none;
+  outline: none;
+  font-weight: 900;
+}
+input::placeholder {
+  color: black;
+  font-weight: 900;
+}
+
+textarea::placeholder {
+  color: black;
+  font-weight: 900;
+}
+.submit {
+  width: 90%;
+  background: none;
+  padding: 4px;
+  outline: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 3%;
+  border: 2px solid rgb(136, 85, 195);
+  color: #8156c9;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.submit:hover {
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
